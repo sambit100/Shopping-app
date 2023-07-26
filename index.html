@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+ <!-- <script src="script.js"></script> -->
+  <script></script>
+
+
+
+
+        
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <!-- header start -->
+   
+            <div class="btn-toolbar bg-danger d-flex justify-content-between p-1">
+                <div class="btn btn-group">
+                    
+                    <button class="btn btn-danger" onclick="bodyload()"><span class="bi bi-house"> </span> Home</button>
+                    <button class="btn btn-danger">About</button>
+                    <button class="btn btn-danger">Contact</button>
+                </div>
+                <div class="btn btn-group">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginbtn" >login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#registerbtn">signup</button>
+            
+                </div>
+            </div>
+
+
+            <!-- login button modal -->
+            <div class="modal fade" id="loginbtn">
+                <div class="modal-dialog "> 
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Login</h2>
+                       <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                       <div class="modal-body">
+                          <dl>
+                            <dt>Name</dt>
+                            <dd><input type="text" placeholder="enter username"></dd>
+                            <dt>password</dt>
+                            <dd><input type="password" placeholder="enter password"></dd>
+                           
+                          </dl>
+                       </div>
+                       <div class="modal-footer">
+                     <button class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+                     <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                       </div>
+                    </div>
+            
+            
+                </div>
+            
+             </div>
+             <div class="modal fade" id="registerbtn">
+                <div class="modal-dialog "> 
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Create New Account</h2>
+                       <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                       <div class="modal-body">
+                          <dl>
+                            <dt>UserName</dt>
+                            <dd><input type="text"></dd>
+                            <dt>Password</dt>
+                            <dd><input type="email"></dd>
+                            <dt>Mobile</dt>
+                            <dd><input type="number" name="" id=""></dd>
+                          </dl>
+                       </div>
+                       <div class="modal-footer">
+                     <a href="./register.html" class="btn btn-primary ">Register</></a>
+                     <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                       </div>
+                    </div>
+            
+            
+                </div>
+            
+             </div>
+    <!-- header end -->
+    <section class="row">
+        <nav class="col-2">
+
+            <div>
+                <label class="form-label mt-3">select categories</label>
+            </div>
+            <select onchange="changecategory()" class="form-select" id="lstcategories">
+
+            </select>
+        </nav>
+ <main class="col-7 d-flex flex-wrap overflow-auto" style="height:500px">
+
+ </main>
+ 
+ <aside class="col-2 mt-3">
+<button  onclick="loadcartitem()"  data-bs-target="#cart"  data-bs-toggle ="modal" class="btn btn-outline-danger">
+    
+    [<span id="lblcount"></span>]
+    your cart items
+
+
+
+
+</button>
+    <div class="modal fade" id="cart">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>your cart item</h3>
+                <button data-bs-dismiss="modal" class="btn btn-close">
+
+
+
+          </button>
+            </div>
+            <div class="modal-body">
+          <table class="table table-hover">
+            
+              <thead>
+                <tr>
+                <th>title</th>
+                    <th>price</th>
+                    <th>preview</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            
+          </table>
+            </div>
+            <div class="modal-footer">
+                 <a href="./login.html" class="btn btn-success ">Buy now</a>
+            </div>
+
+        </div> 
+
+      </div>
+    </div>
+
+</div>
+ </aside>
+
+
+    </section>
+
+
+       <script src="script.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script  src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+   
+</body>
+</html>
