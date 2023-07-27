@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#thik img{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    left:40%;
+    top: 30px;
+}
+#text h1{
+    margin-left:33%;
+    margin-top:5%;
+    font-weight: 600;
+}
+#text h3{
+  font-weight:600;
+  margin-left:38%;
+  margin-top:2%;
+
+}

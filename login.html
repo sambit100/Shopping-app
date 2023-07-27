@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- <script> 
+        //we will check entered userid and password is matched or not
+          function login(){
+            let user = document.getElementById("txtmsg").value;
+            let pwd = document.getElementById("txtpwd").value;
+        
+             fetch("user.json").then(function(response){
+                return response.json();
+             }).then(function (data){
+                 for( let d of data){
+                    if(d.username===user && d.password===pwd){
+                           
+                    }
+                    else{
+                        document.write="login failed";
+                    }
+                }
+            
+                 
+             })
+         }  
+         
+            </script> --> 
+</head>
+<body >
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body class="container-fluid">
+  
+    <div class="d-flex justify-content-center align-items-center"style="height:500px;">
+        <div>
+
+            <h2>Login</h2>
+            <div class="mb-2">
+                <label class="form-label" for="username">user name</label>
+                <div class="input-group">
+                    <span class="bi bi-person input-group-text"></span>
+                    <input type="text" name="username" class="form-control" id="txtmsg">
+                    <span class="bi bi-check-circle input-group-text"></span>
+                </div>
+            </div> 
+        <div class="mb-2">
+            <label class="form-label" for="password" >password</label>
+            <div class="input-group">
+                <span class="bi bi-key-fill input-group-text" ></span>
+                <input type="password" name="password" class="form-control" id="txtpawd">
+                
+                <span class="bi bi-check-circle input-group-text"></span>
+            </div>
+        </div>
+       
+        
+        <div class="mt-2">
+            <a href="./index.html" class="btn btn-primary w-100">Login</a>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
